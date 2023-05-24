@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <th:block th:insert ="layout :: link-css"></th:block>
+
+    <title>Title</title>
+</head>
+<body>
+<th:block th:insert="layout :: header"></th:block>
+
+<div class="intro" style="height: 100vh; display:flex; align-items: center; flex-direction: column;">
+    <h1>Xin chao!</h1>
+    <div>toi ten la: <span style="font-weight: bold; color: #666;">Nguyen Duc Hung</span></div>
+    <div>toi <span style="font-weight: bold; color: blue;">21 tuoi</span> den tu <span style="font-weight: bold; color: red;">Viet Nam</span></div>
+    <div>Hien tai toi la sinh vien truong dai hoc <a href="https://www.hutech.edu.vn/">HUTECH</a></div>
+    <img src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png" alt="Girl in a jacket" width="700" >
+</div>
+<th:block th:insert="layout :: footer"></th:block>
+
+</body>
+
+</html>
