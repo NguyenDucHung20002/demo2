@@ -17,11 +17,15 @@ public class CategoryService {
         return categoryRepository.findAll();
     }
 
+    public void addCategory(Category category){
+        categoryRepository.save(category);
+    };
+
     public Category getCategoryById(long id){
         return categoryRepository.findById(id).orElse(null);
     }
 
-    public void saveCategory(long id){
+    public void deleteCategory(long id){
         categoryRepository.deleteById(id);
     }
 
